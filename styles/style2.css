@@ -1,7 +1,91 @@
 .Header-Style {
     background-color: #F08726;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
 
 .main-screen {
     background-color: #F08726;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    font-weight: 600;
+    width: 754px;
+    height: 212px;
+    margin: 33px 623px 30px 63px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-left: 708px;
+}
+
+.top_p_style {
+    margin-right: 735px;
+    margin-bottom: 250px;
+    margin-left: 63px;
+    width: 642px;
+    height: 81px;
+}
+
+/*.Top_Arrow {
+    margin-top: 683px;
+    margin-right: 257px;
+    margin-bottom: 75px;
+    margin-left: 1183px;
+    width: 300px;
+    height: 192px;
+}
+*/
+
+#Poster {
+    height: 718px; 
+    width: 448px;
+
+}
+
+#Poster-wide {
+    height: 661px; 
+    width: 1440px;
+
+}
+
+.Years_of_release {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-left: 708px;
+}
+
+
+
+h3 {
+    color: #F08726;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-left: 708px;
+}
+
+h2 {
+    color: rgb(00, 00, 00, 90);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    margin-bottom: 40px;
+    margin-left: 708px;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    border: none;
+    background-color: white;
+    padding: 15px;
 }

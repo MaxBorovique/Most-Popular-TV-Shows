@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="./styles/style2.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="Header-Style">
@@ -43,17 +43,16 @@
             <article><a href="#"><img width="194.73px" height="293px" src="/images/Rick_and_Morty_poster.png" alt="The poster of Rick and Morty TV-show"></a></article>
             <article><a href="#"><img width="140px" height="293px" src="./images/12monkeys_poster.png" alt="The poster of 12 monkeys TV-show"></a></article>
             <h1>Most Popular<br> TV Shows</h1>
-            <p>New shows come to the streaming giant all the time — too many<br>to ever watch them all. 
+            <p class="top_p_style">New shows come to the streaming giant all the time — too many<br>to ever watch them all. 
                 We&#8242;re here to help. Here is a list of the most<br>rated TV shows according to IMDb.</p>
         </section>
-        <img width="9px" height="192px" src="./images/Arrow_Picture.png" role="presentation" aria-hidden="true">
-        <br><br><br><br>
+        <!--<img class="Top_Arrow" width="9px" height="192px" src="./images/Arrow_Picture.png" role="presentation" aria-hidden="true">-->
         <section>
-            <article><img height="726px" width="448" src="./images/See_Poster.png" role="presentation" aria-hidden="true"></article>
+            <img id="Poster" src="./images/See_Poster.png" role="presentation" aria-hidden="true">
             <div>
                 <h3>01</h3>
                 <h2>See</h2>
-                <p>2019-..., USA</p>
+                <p class="Years_of_release">2019-..., USA</p>
                 <p>Far in a dystopian future, the human race has<br>lost the sense of sight,
                 and society has had to<br>find new ways to interact, build, hunt, and to<br>survive.
                 All of that is challenged when a set of<br>twins is born with sight.</p>
@@ -72,9 +71,7 @@
                     <button type="button">Watch trailer<img width="30px" height="30px" src="./images/Play.png" 
                         role="presentation" aria-hidden="true"></button>
             </div>
-                <article>
-                    <img src="./images/Haunting_Hill_House.png" role="presentation" aria-hidden="true">
-                </article>
+                    <img id="Poster" src="./images/Haunting_Hill_House.png" role="presentation" aria-hidden="true">
         </section>
         <section>
             <div>
@@ -87,10 +84,10 @@
                     <button type="button">Watch trailer<img width="30px" height="30px" src="./images/Play.png" 
                         role="presentation" aria-hidden="true"></button>
             </div>
-                <img src="./images/SexEducation_Poster.png" role="presentation" aria-hidden="true"/>
+                <img id="Poster-wide" src="./images/SexEducation_Poster.png" role="presentation" aria-hidden="true"/>
         </section>
         <section>
-            <img src="./images/midhunter_poster.png" role="presentation" aria-hidden="true"/>
+            <img id="Poster" src="./images/midhunter_poster.png" role="presentation" aria-hidden="true"/>
             <div>
                 <h3>04</h3>
                 <h2>Mindhunter</h2>
@@ -103,7 +100,7 @@
             </div>
         </section>
         <section>
-            <img src="./images/dark_poster.png" role="presentation" aria-hidden="true"/>
+            <img id="Poster" src="./images/dark_poster.png" role="presentation" aria-hidden="true"/>
             <div>
                 <h3>05</h3>
                 <h2>Dark</h2>
@@ -125,22 +122,22 @@
                 <button type="button">Watch trailer<img width="30px" height="30px" src="./images/Play.png" 
                     role="presentation" aria-hidden="true"></button>
             </div>
-                <img src="./images/peaky_blinders_poster.png" role="presentation" aria-hidden="true"/>
+                <img id="Poster-wide" src="./images/peaky_blinders_poster.png" role="presentation" aria-hidden="true"/>
         </section>
         <section>
-            <img src="./images/black_mirror_poster.png" role="presentation" aria-hidden="true"/>
+            <img id="Poster" src="./images/black_mirror_poster.png" role="presentation" aria-hidden="true"/>
             <div>
                 <h3>07</h3>
                 <h2>Black mirror</h2>
                 <p>2011-..., Great Britain</p>
-                <p>An anthology series exploring a twisted,<br> high-tech multiverse where humanity's<br> greatest
+                <p>An anthology series exploring a twisted,<br> high-tech multiverse where humanity&#8242;s<br> greatest
                     innovations and darkest instincts<br> collide.</p>
                 <button type="button">Watch trailer<img width="30px" height="30px" src="./images/Play.png" 
                         role="presentation" aria-hidden="true"></button>
             </div>
         </section>
         <section>
-            <img src="./images/sherlock_poster.png" role="presentation" aria-hidden="true"/>
+            <img id="Poster" src="./images/sherlock_poster.png" role="presentation" aria-hidden="true"/>
             <div>
                 <h3>08</h3>
                 <h2>Sherlock</h2>
@@ -152,7 +149,7 @@
             </div>
         </section>
         <section>
-            <img src="./images/GoT_poster.png" role="presentation" aria-hidden="true"/>
+            <img id="Poster" src="./images/GoT_poster.png" role="presentation" aria-hidden="true"/>
             <div>
                 <h3>09</h3>
                 <h2>Game of Thrones</h2>
@@ -173,11 +170,11 @@
                         with inoperable lung cancer turns to<br>
                         manufacturing and selling<br> 
                         methamphetamine in order to secure his<br> 
-                        family's future.</p>
+                        family&#8242;s future.</p>
                     <button type="button">Watch trailer<img width="30px" height="30px" src="./images/Play.png" 
                         role="presentation" aria-hidden="true"></button>
             </div>
-                <img src="./images/Breaking_bad_poster.png" role="presentation" aria-hidden="true"/>
+                <img id="Poster-wide" src="./images/Breaking_bad_poster.png" role="presentation" aria-hidden="true"/>
         </section>
         <section>
             <h2>SEE ALSO:</h2>
