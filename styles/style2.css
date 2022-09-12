@@ -15,10 +15,12 @@ h1 {
     width: 754px;
     height: 212px;
     margin: 33px 623px 30px 63px;
+    color: black;
 }
 
-p {
+p :not(.Season-number) {
     font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, 80%);
     font-size: 18px;
     margin-bottom: 40px;
     margin-left: 708px;
@@ -30,6 +32,7 @@ p {
     margin-left: 63px;
     width: 642px;
     height: 81px;
+    color: rgba(0, 0, 0, 80%);
 }
 
 /*.Top_Arrow {
@@ -79,12 +82,14 @@ p {
 .Years_of_release {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 70%);
     margin-left: 708px;
 }
 
 
 
-h3 {
+h3 :not(figcaption){
     color: #F08726;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -94,7 +99,7 @@ h3 {
 }
 
 h2 {
-    color: rgb(00, 00, 00, 90);
+    color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 52px;
@@ -142,4 +147,33 @@ button {
     margin-bottom: 216px;
     margin-left: 845px;
 }
+
+
+#Info-Group-6 {
+    height: 571px;
+    width: 642px;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
 */
+#Another-H2-Style {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    color: black;
+}
+
+figcaption {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+
+.Season-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 80%);
+}
