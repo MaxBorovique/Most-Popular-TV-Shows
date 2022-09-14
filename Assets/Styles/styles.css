@@ -1,3 +1,89 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 80%);
 }
+
+/*Header*/
+.header {
+    background-color: #FF9635;
+    position: absolute;
+    width: 1440px;
+    height: 51px;
+    left: 0px;
+    top: 0px;
+}
+
+/*Navigation*/
+
+.nav {
+    float: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+
+}
+
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.nav-link:hover {
+    color: black
+}
+
+.container {}
+
+/*Intro*/
+
+.intro {
+    background-color: #FF9635;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 106px;
+    color: black
+}
+
+h2 {}
+
+h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 78px;
+    color: #000000;
+}
+
+h4{
+    color: #FF9635;;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 70%;
+}
+.intro-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 80%);
+}
+
+.release_years {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 70%)
+}
+
