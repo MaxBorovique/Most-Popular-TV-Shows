@@ -325,6 +325,87 @@ margin-left: 0px;
 }
 
 
+/*Peaky Blinders*/
 
 
+
+/*Black Mirror and Sherlock section*/
+
+.Black-Sherlock {
+    overflow: hidden;
+
+}
+
+.Black {
+    display: inline-block;
+    margin-top: 250px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    margin-left: 175px;
+}
+
+.Black_Info {
+    display: block;
+    float: left;
+    margin-right: 255px;
+    margin-left: 175px;
+
+}
+
+.Black_Info h4 {
+    padding-top: 0px;
+    padding-right: 250px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.Black_Info h3 {
+    padding-bottom: 40px;
+}
+
+.Black_Info .release_years {
+    padding-bottom: 40px;
+}
+
+.Black_Info p {
+    padding-bottom: 70px;
+}
+
+
+.Sherlock {
+    display: inline-block;
+    float: right;
+    margin-top: -800px;
+    margin-right: 170px;
+    margin-bottom: 40px;
+    margin-left: 55px;
+}
+
+.Sherlock_info {
+    display: block;
+    float: right;
+    margin-right: 170px;
+    margin-bottom: 150px;
+
+
+}
+
+.Sherlock_info h4 {
+    padding-top: 0px;
+    padding-right: 250px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.Sherlock_info h3 {
+    padding-bottom: 40px;
+}
+
+.Sherlock_info .release_years {
+    padding-bottom: 40px;
+}
+
+.Sherlock_info p {
+    padding-bottom: 70px;
+}
 
