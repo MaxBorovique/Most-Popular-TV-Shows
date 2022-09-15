@@ -10,28 +10,60 @@ body {
 /*Header*/
 .header {
     background-color: #FF9635;
-    position: absolute;
     width: 1440px;
     height: 51px;
-    left: 0px;
-    top: 0px;
+    padding-top: 8px ;
+    padding-right: 0px;
+    padding-bottom: 8px;
+    padding-left: 0px;
+
 }
 
+.logo-style {
+    display: inline-block;
+    width: 36px;
+    height: 31px;
+    float: left;
+    padding-top: 8px;
+    padding-right:63px;
+    padding-bottom: 13px;
+    padding-left: 63px;
+}
+
+.size {
+    width: 192px;
+    height: 293px;
+}
 /*Navigation*/
 
 .nav {
-    float: left;
+    display: block;
+    float: right;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 0px;
     line-height: 35px;
 
 }
 
-.nav-link {
+.nav li {
+    display: inline-block;
+    float: right    ;
+    padding: 11, 7;
+    padding: 8, 46,;
+    font-size: 16px;
+    margin-right: 46px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
+
+}
+
+.nav li a {
+    display: block;
     color: #000000;
     text-decoration: none;
-    transition: color .2s linear;
+
 }
 
 .nav-link:hover {
@@ -43,15 +75,32 @@ body {
 /*Intro*/
 
 .intro {
+    width: 1440px;
     background-color: #FF9635;
+    box-sizing: border-box;
+}
+
+.intro article {
+    display: inline-block;
+    float: left ;
+    padding-top: 0px;
+    padding-right:0px;
+    padding-bottom: 33px;
+    padding-left: 0px;
+
 }
 
 h1 {
+    display: inline-block;
     font-style: normal;
     font-weight: 600;
     font-size: 100px;
     line-height: 106px;
-    color: black
+    color: #000000;
+    margin-top: 33px;
+    margin-right: 63px;
+    margin-bottom: 30px ;
+    margin-left: 63px;
 }
 
 h2 {}
@@ -72,11 +121,15 @@ h4{
     line-height: 70%;
 }
 .intro-text {
+    display: inline-block;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     color: rgba(0, 0, 0, 80%);
+    margin-right: 63px;
+    margin-bottom: 100px ;
+    margin-left: 63px;
 }
 
 .release_years {
@@ -87,3 +140,4 @@ h4{
     color: rgba(0, 0, 0, 70%)
 }
 
+transition: color .2s linear;
