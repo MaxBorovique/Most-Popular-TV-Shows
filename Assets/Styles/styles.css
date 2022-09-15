@@ -80,7 +80,6 @@ body {
 .intro {
     width: 1440px;
     background-color: #FF9635;
-    margin-bottom: 250px;
 }
 
 .intro article {
@@ -168,24 +167,28 @@ main {
     margin-right: 317px;
 }*/
 
-
-.SeeInfo {
+/* Старый вариант See и Haunting
+.SeeInfo  {
     float: right;
 width: 418px;
 height: 463px; 
 margin-top: 327px;
-margin-right: 200px;
+margin-right: 317px;
 margin-bottom: 50px;
-margin-left: 0px;
+margin-left: 112px;
 }
 
 .See_Block {  
+    overflow: hidden;
+    width: 1440px;
     
-    float: left;  
-    margin-top: 0px;
-    margin-right: 112px;
-    margin-bottom: 50px;
-    margin-left: 175px;
+}
+.First_Poster {
+    float: left;
+    margin-top: 250px;
+
+    margin-bottom: 322px;
+    margin-left: 112px;
 }
 
 .SeeInfo h4 {
@@ -205,26 +208,137 @@ margin-left: 0px;
 
 .SeeInfo p {
     padding-bottom: 70px;
+} 
+
+.haunting {
+    overflow: hidden;
+    display: inline-block;
+    float: right;
+    margin-right: 175px;
+    margin-top: 328px;
+    margin-bottom: 150px;
+    margin-left: 0px;
+   
 }
 
 
 .haunting_info {
-    width: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: block;
     float: left;
-    height: 474px;
-    margin-top: 322px ;
-    margin-right: 112px;
-    margin-bottom: 222px;
-    margin-right: 317px;
+    padding: 0px;
+    
 }
 
-.haunting_info img {
+
+
+
+
+.haunting_info h4 {
+    padding-top: 0px;
+    padding-right: 250px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.haunting_info h3 {
+    padding-bottom: 40px;
+}
+
+.haunting_info .release_years {
+    padding-bottom: 40px;
+}
+
+.haunting_info p {
+    padding-bottom: 70px;
+}
+*/
+
+  /* See and HoHH Section*/
+  .See-HoHH {
+    overflow: hidden;
+
+}
+
+.See {
+    display: inline-block;
+    margin-top: 250px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    margin-left: 175px;
+}
+
+.See_Info {
+    display: block;
     float: right;
-    margin-top: 250px ;
+    width: 418px;
+    height: 463px;
+    margin-right: 317px;
+    margin-top: 327px;
+
+}
+
+.See_Info h4 {
+    padding-top: 0px;
+    padding-right: 250px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.See_Info h3 {
+    padding-bottom: 40px;
+}
+
+.See_Info .release_years {
+    padding-bottom: 40px;
+}
+
+.See_Info p {
+    padding-bottom: 70px;
+}
+
+
+.HoHH {
+    display: inline-block;
+    float: right;
+    margin-top: 328px;
+    margin-right: 175px;
+    margin-bottom: 150px;
+}
+
+.HoHH_info {
+    display: block;
+    float: left;
+    width: 418px;
+    height: 474px;
+    margin-top: 322px;
     margin-right: 112px;
     margin-bottom: 222px;
-    margin-right: 1px;
+    margin-left: 317px;
+
+
 }
+
+.HoHH_info h4 {
+    padding-top: 0px;
+    padding-right: 250px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.HoHH_info h3 {
+    padding-bottom: 40px;
+}
+
+.HoHH_info .release_years {
+    padding-bottom: 40px;
+}
+
+.HoHH_info p {
+    padding-bottom: 70px;
+}
+
 
 
 
@@ -409,3 +523,43 @@ margin-left: 0px;
     padding-bottom: 70px;
 }
 
+/* ДОДЕЛАТЬ!
+.GoTH {
+    display: inline-block;
+    float: left;
+    margin-top: 512px;
+    margin-right: 112px;
+    margin-bottom: 160px;
+    margin-left: 315px;
+}
+
+.GoTH_info {
+    display: block;
+    float: right;
+    margin-top: 305px;
+    margin-right: 177px;
+    margin-bottom: 226px;
+
+
+}
+
+.GoTH_info h4 {
+    padding-top: 0px;
+    padding-right: 250px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.GoTH_info h3 {
+    padding-bottom: 40px;
+}
+
+.GoTH_info .release_years {
+    padding-bottom: 40px;
+}
+
+.GoTH_info p {
+    padding-bottom: 70px;
+}
+
+*/
