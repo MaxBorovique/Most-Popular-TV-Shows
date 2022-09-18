@@ -73,8 +73,6 @@ body {
     
 }
 
-.container {}
-
 /*Intro*/
 
 .intro {
@@ -106,7 +104,17 @@ h1 {
     margin-left: 63px;
 }
 
-h2 {}
+h2 {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 86px;
+    color: #000000;
+    margin-left: 175px;
+    margin-bottom: 83px;
+}
 
 h3{
     font-style: normal;
@@ -122,6 +130,15 @@ h4{
     font-weight: 400;
     font-size: 36px;
     line-height: 70%;
+}
+
+h5 {
+    vertical-align: text-top;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
 }
 .intro-text {
     display: inline-block;
@@ -148,93 +165,6 @@ transition: color .2s linear;*/
 main {
     width: 100%;
 }
-
-/*Section SEE Movie"*/
-/*
-.span-SEE {
-    display: inline-block;
-    width: 50%;
-    float: left;
-    margin-top: 170px;
-    margin-left: 215px;
-    margin-bottom: 20px;
-}
-
-.SeeInfo {
-    display: inline-block;
-    width: 50%;
-    float: right;
-    margin-top: 327px;
-    margin-left: 175px;
-    margin-right: 317px;
-}*/
-
-/* Старый вариант See и Haunting
-.SeeInfo  {
-    float: right;
-width: 418px;
-height: 463px; 
-margin-top: 327px;
-margin-right: 317px;
-margin-bottom: 50px;
-margin-left: 112px;
-}
-
-.See_Block {  
-    overflow: hidden;
-    width: 1440px;
-    
-}
-.First_Poster {
-    float: left;
-    margin-top: 250px;
-
-    margin-bottom: 322px;
-    margin-left: 112px;
-}
-
-.SeeInfo h4 {
-    padding-top: 0px;
-    padding-right: 250px;
-    padding-bottom: 10px;
-    text-align: left;
-}
-
-.SeeInfo h3 {
-    padding-bottom: 40px;
-}
-
-.SeeInfo .release_years {
-    padding-bottom: 40px;
-}
-
-.SeeInfo p {
-    padding-bottom: 70px;
-} 
-
-.haunting {
-    overflow: hidden;
-    display: inline-block;
-    float: right;
-    margin-right: 175px;
-    margin-top: 328px;
-    margin-bottom: 150px;
-    margin-left: 0px;
-   
-}
-
-
-.haunting_info {
-    box-sizing: border-box;
-    overflow: hidden;
-    display: block;
-    float: left;
-    padding: 0px;
-    
-}
-
-
-
 
 
 .haunting_info h4 {
@@ -341,24 +271,130 @@ margin-left: 112px;
     padding-bottom: 70px;
 }
 
+.sex_ed {
+    position: relative;.
+    max-width: 1440px;
+    margin-bottom:150px;
+}
+
+.container {
+    background-color: #000000;
+    position: absolute; 
+    margin: 45px 0px 45px 63px;
+    max-width: 642px;
+    max-height: 571px;
+    z-index: 5;
+}
+
+.sex_ed_info {
+    position: absolute;
+    display: block ;
+    max-width: 418px;
+    padding: 125px 0px 125px 175px;
+    color: white;
+    z-index: 10;
+
+}
+
+.white-headline {
+    color: #FFFFFF;
+
+}
+
+.sex_ed_info h4 {
+    padding-bottom: 10px;
+    
+}
+
+.sex_ed_info h3 {
+    padding-bottom: 40px;
+    
+}
+
+.sex_ed_info .release_years {
+    padding-bottom: 40px;
+    color: #FFFFFF;
+}
+
+.sex_ed_info p {
+    padding-bottom: 70px;
+    
+}
 
 
 
+.peaky {
+    position: relative;.
+    max-width: 1440px;
+    margin-bottom:150px;
+}
+.peaky_info {
+    position: absolute;
+    display: block ;
+    max-width: 418px;
+    padding: 125px 0px 125px 175px;
+    color: white;
+    z-index: 10;
+
+}
 
 
+.peaky_info h4 {
+    padding-bottom: 10px;
+    
+}
 
+.peaky_info h3 {
+    padding-bottom: 40px;
+    
+}
 
+.peaky_info .release_years {
+    padding-bottom: 40px;
+    color: #FFFFFF;
+}
 
+.peaky_info p {
+    padding-bottom: 70px;
+    
+}
 
+/*Braking bad*/
 
+.breaking_bad {
+    position: relative;.
+    max-width: 1440px;
+    margin-bottom:150px;
+}
+.breaking_bad_info {
+    position: absolute;
+    display: block ;
+    max-width: 418px;
+    padding: 125px 0px 125px 175px;
+    color: white;
+    z-index: 10;
 
+}
 
+.breaking_bad_info h4 {
+    padding-bottom: 10px;
+    
+}
 
+.breaking_bad_info h3 {
+    padding-bottom: 40px;
+    
+}
 
+.breaking_bad_info .release_years {
+    padding-bottom: 40px;
+    color: #FFFFFF;
+}
 
-
-
-
+.breaking_bad_info p {
+    padding-bottom: 70px;
+    
+}
 
 /*Mindhunter and Dark Section*/
 
@@ -441,10 +477,6 @@ margin-left: 112px;
 .dark_info p {
     padding-bottom: 70px;
 }
-
-
-/*Peaky Blinders*/
-
 
 
 /*Black Mirror and Sherlock section*/
@@ -573,3 +605,88 @@ margin-left: 112px;
 }
 
 */
+
+
+/*SEE ALSO*/
+
+figure {
+    float: left;
+    margin-right: 65px;
+
+}
+
+figure:first-child {
+    margin-left: 170px;
+}
+
+figure:last-child {
+    margin-right: 175px;
+}
+
+figcaption {
+    padding-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+figcaption p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.see_also-size {
+    display: inline-block;
+}
+
+
+/*Footer*/
+
+footer {
+    margin-top: 110px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: #000000;
+    background-color: #FF9635;
+    
+}
+
+.uuuu {
+    position: relative;
+}
+
+.sections-block {
+    
+    display: inline-block;
+    padding-top: 50px;
+    padding-right: 142px;
+    height: 195px;
+    color: #000000;
+    border: 1px solid #000000;
+
+    
+}
+.about {
+
+    display: inline-block;
+    padding: 50px 142px 85px 63px;
+    height: 195px;
+    color: #000000;
+    border: 1px solid #000000;
+}
+.contact {
+    position: absolute;
+    display: inline-block;
+    padding: 50px 100px 147px 63px;
+    height: 195px;
+    color: #000000;
+    border: 1px solid #000000;
+
+
+}
