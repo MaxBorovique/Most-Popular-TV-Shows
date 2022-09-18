@@ -8,6 +8,7 @@ body {
     width: 1440px;
 }
 
+
 /*Header*/
 .header {
     background-color: #FF9635;
@@ -48,7 +49,6 @@ body {
 }
 
 .nav li {
-    display: inline-block;
     float: right    ;
     padding: 11, 7;
     padding: 8, 46,;
@@ -99,7 +99,8 @@ h1 {
     font-size: 100px;
     line-height: 106px;
     color: #000000;
-    margin-top: 33px;
+    max-width: 715px;
+
     margin-right: 63px;
     margin-bottom: 30px ;
     margin-left: 63px;
@@ -132,6 +133,7 @@ h4{
     margin-right: 63px;
     margin-bottom: 100px ;
     margin-left: 63px;
+    max-width: 600px;
 }
 
 .release_years {
@@ -256,12 +258,12 @@ margin-left: 112px;
 */
 
   /* See and HoHH Section*/
-  .See-HoHH {
+  .see-hohh {
     overflow: hidden;
 
 }
 
-.See {
+.see {
     display: inline-block;
     margin-top: 250px;
     margin-right: 100px;
@@ -269,7 +271,7 @@ margin-left: 112px;
     margin-left: 175px;
 }
 
-.See_Info {
+.see_info {
     display: block;
     float: right;
     width: 418px;
@@ -279,27 +281,27 @@ margin-left: 112px;
 
 }
 
-.See_Info h4 {
+.see_info h4 {
     padding-top: 0px;
     padding-right: 250px;
     padding-bottom: 10px;
     text-align: left;
 }
 
-.See_Info h3 {
+.see_info h3 {
     padding-bottom: 40px;
 }
 
-.See_Info .release_years {
+.see_info .release_years {
     padding-bottom: 40px;
 }
 
-.See_Info p {
+.see_info p {
     padding-bottom: 70px;
 }
 
 
-.HoHH {
+.hohh {
     display: inline-block;
     float: right;
     margin-top: 328px;
@@ -307,7 +309,7 @@ margin-left: 112px;
     margin-bottom: 150px;
 }
 
-.HoHH_info {
+.hohh_info {
     display: block;
     float: left;
     width: 418px;
@@ -320,22 +322,22 @@ margin-left: 112px;
 
 }
 
-.HoHH_info h4 {
+.hohh_info h4 {
     padding-top: 0px;
     padding-right: 250px;
     padding-bottom: 10px;
     text-align: left;
 }
 
-.HoHH_info h3 {
+.hohh_info h3 {
     padding-bottom: 40px;
 }
 
-.HoHH_info .release_years {
+.hohh_info .release_years {
     padding-bottom: 40px;
 }
 
-.HoHH_info p {
+.hohh_info p {
     padding-bottom: 70px;
 }
 
@@ -360,12 +362,12 @@ margin-left: 112px;
 
 /*Mindhunter and Dark Section*/
 
-.Mind-Dark {
+.mind-dark {
     overflow: hidden;
 
 }
 
-.Mind {
+.mind {
     display: inline-block;
     margin-top: 250px;
     margin-right: 100px;
@@ -373,30 +375,31 @@ margin-left: 112px;
     margin-left: 175px;
 }
 
-.Mind_Info {
+.mind_info {
     display: block;
     float: left;
     margin-right: 255px;
     margin-left: 175px;
+    max-width: 373px;
 
 }
 
-.Mind_Info h4 {
+.mind_info h4 {
     padding-top: 0px;
     padding-right: 250px;
     padding-bottom: 10px;
     text-align: left;
 }
 
-.Mind_Info h3 {
+.mind_info h3 {
     padding-bottom: 40px;
 }
 
-.Mind_Info .release_years {
+.mind_info .release_years {
     padding-bottom: 40px;
 }
 
-.Mind_Info p {
+.mind_info p {
     padding-bottom: 70px;
 }
 
@@ -404,7 +407,7 @@ margin-left: 112px;
 .dark {
     display: inline-block;
     float: right;
-    margin-top: -350px;
+    margin-top: -700px;
     margin-right: 170px;
     margin-bottom: 40px;
     margin-left: 55px;
@@ -415,6 +418,7 @@ margin-left: 112px;
     float: right;
     margin-right: 170px;
     margin-bottom: 150px;
+    max-width: 411px;
 
 
 }
@@ -445,12 +449,12 @@ margin-left: 112px;
 
 /*Black Mirror and Sherlock section*/
 
-.Black-Sherlock {
+.black-sherlock {
     overflow: hidden;
 
 }
 
-.Black {
+.black {
     display: inline-block;
     margin-top: 250px;
     margin-right: 100px;
@@ -458,35 +462,37 @@ margin-left: 112px;
     margin-left: 175px;
 }
 
-.Black_Info {
+.black_info {
+    position: relative;
     display: block;
     float: left;
-    margin-right: 255px;
+    margin-right: 210px;
     margin-left: 175px;
+    max-width: 418px;
 
 }
 
-.Black_Info h4 {
+.black_info h4 {
     padding-top: 0px;
     padding-right: 250px;
     padding-bottom: 10px;
     text-align: left;
 }
 
-.Black_Info h3 {
+.black_info h3 {
     padding-bottom: 40px;
 }
 
-.Black_Info .release_years {
+.black_info .release_years {
     padding-bottom: 40px;
 }
 
-.Black_Info p {
+.black_info p {
     padding-bottom: 70px;
 }
 
 
-.Sherlock {
+.sherlock {
     display: inline-block;
     float: right;
     margin-top: -800px;
@@ -495,36 +501,40 @@ margin-left: 112px;
     margin-left: 55px;
 }
 
-.Sherlock_info {
+.sherlock_info {
     display: block;
     float: right;
     margin-right: 170px;
     margin-bottom: 150px;
+    margin-top: -100px;
+    margin-left: 254px;
+    max-width: 418px;
+
 
 
 }
 
-.Sherlock_info h4 {
+.sherlock_info h4 {
     padding-top: 0px;
     padding-right: 250px;
     padding-bottom: 10px;
     text-align: left;
 }
 
-.Sherlock_info h3 {
+.sherlock_info h3 {
     padding-bottom: 40px;
 }
 
-.Sherlock_info .release_years {
+.sherlock_info .release_years {
     padding-bottom: 40px;
 }
 
-.Sherlock_info p {
+.sherlock_info p {
     padding-bottom: 70px;
 }
 
 /* ДОДЕЛАТЬ!
-.GoTH {
+.game {
     display: inline-block;
     float: left;
     margin-top: 512px;
@@ -533,7 +543,7 @@ margin-left: 112px;
     margin-left: 315px;
 }
 
-.GoTH_info {
+.game_info {
     display: block;
     float: right;
     margin-top: 305px;
@@ -543,22 +553,22 @@ margin-left: 112px;
 
 }
 
-.GoTH_info h4 {
+.game_info h4 {
     padding-top: 0px;
     padding-right: 250px;
     padding-bottom: 10px;
     text-align: left;
 }
 
-.GoTH_info h3 {
+.game_info h3 {
     padding-bottom: 40px;
 }
 
-.GoTH_info .release_years {
+.game_info .release_years {
     padding-bottom: 40px;
 }
 
-.GoTH_info p {
+.game_info p {
     padding-bottom: 70px;
 }
 
