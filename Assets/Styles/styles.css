@@ -272,7 +272,7 @@ main {
 }
 
 .sex_ed {
-    position: relative;.
+    position: relative;
     max-width: 1440px;
     margin-bottom:150px;
 }
@@ -324,7 +324,7 @@ main {
 
 
 .peaky {
-    position: relative;.
+    position: relative;
     max-width: 1440px;
     margin-bottom:150px;
 }
@@ -362,7 +362,7 @@ main {
 /*Braking bad*/
 
 .breaking_bad {
-    position: relative;.
+    position: relative;
     max-width: 1440px;
     margin-bottom:150px;
 }
@@ -541,8 +541,7 @@ main {
     margin-top: -100px;
     margin-left: 254px;
     max-width: 418px;
-
-
+    height: 409px;
 
 }
 
@@ -565,23 +564,23 @@ main {
     padding-bottom: 70px;
 }
 
-/* ДОДЕЛАТЬ!
 .game {
-    display: inline-block;
     float: left;
-    margin-top: 512px;
-    margin-right: 112px;
-    margin-bottom: 160px;
-    margin-left: 315px;
+    display: inline-block;
+    margin-top: 250px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    margin-left: 175px;
 }
 
 .game_info {
     display: block;
     float: right;
-    margin-top: 305px;
-    margin-right: 177px;
-    margin-bottom: 226px;
-
+    width: 418px;
+    height: 463px;
+    margin-right: 317px;
+    margin-top: 315px;
+    margin-bottom: 150px;
 
 }
 
@@ -604,7 +603,11 @@ main {
     padding-bottom: 70px;
 }
 
-*/
+
+
+
+
+
 
 
 /*SEE ALSO*/
@@ -668,8 +671,8 @@ footer {
     padding-left: 63px;
     height: 195px;
     color: #000000;
-
-    
+    min-height: 50px;
+    padding-bottom: 85px;    
 }
 .about {
 
