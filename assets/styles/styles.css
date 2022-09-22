@@ -684,9 +684,10 @@ footer {
 
 
 .sections-block {
-    
+    position: relative;
+    top: 0px;
     display: inline-block;
-    padding-top: 50px;
+    margin-top: 50px;
     padding-right: 142px;
     padding-left: 63px;
     height: 195px;
@@ -695,9 +696,10 @@ footer {
     padding-bottom: 85px;    
 }
 .about {
-
+    left: 150px;
+position: inherit;
     display: inline-block;
-    padding: 50px 142px 85px 63px;
+    margin: 50px 142px 85px 63px;
     color: #000000;
 }
 .contact {
