@@ -11,7 +11,7 @@ body {
 
 /*Header*/
 .header {
-    background-color: #FF9635;
+    background-color: #F08726;
     width: 1440px;
     height: 51px;
     padding-top: 8px ;
@@ -164,6 +164,7 @@ h5 {
 transition: color .2s linear;*/
 main {
     width: 100%;
+    background-color: #FFFFFF;
 }
 
 
@@ -188,17 +189,20 @@ main {
 */
 
   /* See and HoHH Section*/
-  .see-hohh {
+.see-hohh {
     overflow: hidden;
 
 }
 
 .see {
+    position: relative;
     display: inline-block;
     margin-top: 250px;
     margin-right: 100px;
     margin-bottom: 40px;
     margin-left: 175px;
+    z-index: 10;
+
 }
 
 .see_info {
@@ -232,11 +236,13 @@ main {
 
 
 .hohh {
+    position: relative;
     display: inline-block;
     float: right;
     margin-top: 328px;
     margin-right: 175px;
     margin-bottom: 150px;
+    z-index: 10;
 }
 
 .hohh_info {
@@ -408,11 +414,13 @@ main {
 }
 
 .mind {
+    position: relative;
     display: inline-block;
     margin-top: 250px;
     margin-right: 100px;
     margin-bottom: 40px;
     margin-left: 175px;
+    z-index: 10;
 }
 
 .mind_info {
@@ -445,12 +453,14 @@ main {
 
 
 .dark {
+    position: relative;
     display: inline-block;
     float: right;
     margin-top: -700px;
     margin-right: 170px;
     margin-bottom: 40px;
     margin-left: 55px;
+    z-index: 10;
 }
 
 .dark_info {
@@ -491,11 +501,13 @@ main {
 }
 
 .black {
+    position: relative;
     display: inline-block;
     margin-top: 250px;
     margin-right: 100px;
     margin-bottom: 40px;
     margin-left: 175px;
+    z-index: 10;
 }
 
 .black_info {
@@ -529,12 +541,14 @@ main {
 
 
 .sherlock {
+    position: relative;
     display: inline-block;
     float: right;
     margin-top: -800px;
     margin-right: 170px;
     margin-bottom: 40px;
     margin-left: 55px;
+    z-index: 10;
 }
 
 .sherlock_info {
@@ -569,12 +583,14 @@ main {
 }
 
 .game {
+    position: relative;
     float: left;
     display: inline-block;
     margin-top: 100px;
     margin-right: 100px;
     margin-bottom: 40px;
     margin-left: 175px;
+    z-index: 10;
 }
 
 .game_info {
@@ -735,3 +751,125 @@ font-size: 14px;
 line-height: 21px;
 color: rgba(0, 0, 0, 0.4);
 }
+
+
+.orange-space {
+    text-align: center;
+    position: absolute;
+    background-color: #FF9635;
+    height: 630px;
+    width: 254px;
+    margin-top: 150px;
+    left: 145px;
+    z-index: 4;
+    
+}
+
+.orange-space span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+    display: block;
+    padding: 20px 70px;
+}
+
+.orange-space-game {
+    text-align: center;
+    position: absolute;
+    background-color: #FF9635;
+    height: 630px;
+    width: 254px;
+    margin-top: 860px;
+    left: 145px;
+    z-index: 4;
+    
+}
+.orange-space-game span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+    display: block;
+    padding: 20px 70px;
+}
+
+.second-orange-space {
+    text-align: center;
+    position: absolute;
+    background-color: #FF9635;
+    height: 630px;
+    width: 254px;
+    margin-top: 250px;
+    margin-right: 145px;
+    z-index: 4;
+    margin-left: 1050px;
+    
+}
+
+.second-orange-space span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+    display: block;
+    padding: 20px 70px;
+
+}
+
+.sherlock-orange-space {
+    text-align: center;
+    position: absolute;
+    background-color: #FF9635;
+    height: 630px;
+    width: 254px;
+    left: 1050px;
+    margin-top:-500px;
+
+    left: 1000;
+    z-index: 4;
+}
+
+.sherlock-orange-space span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+    display: block;
+    padding: 20px 70px;
+
+}
+
+.dark-orange-space {
+    text-align: center;
+    position: absolute;
+    background-color: #FF9635;
+    height: 630px;
+    width: 254px;
+    left: 1050px;
+    margin-top:-380px;
+
+    left: 1000;
+    z-index: 4;
+}
+
+.dark-orange-space span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+    display: block;
+    padding: 20px 70px;
+
+}
+
