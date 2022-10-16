@@ -44,3 +44,40 @@
     line-height: 35px;
     color: #000000;
 }
+
+.main-screen {
+    background-color: #FF9635;
+    padding: 0px;
+}
+
+.main-screen__decoration {
+    max-width: 1440px;
+    display: flex;
+    max-height: 293px;
+}
+
+.main-screen__text {
+    max-width: 1440px;
+    background-color: #FF9635;
+}
+
+.main-screen__text h1 {
+    max-width: 700px;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 106px;
+    color: #000000;
+    padding-left: 63px;
+    padding-bottom: 30px;
+    padding-top: 33px;
+}
+
+.main-screen__text p {
+    max-width: 600px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.8);
+    padding-left: 63px;
+    padding-bottom: 100px;
+}
