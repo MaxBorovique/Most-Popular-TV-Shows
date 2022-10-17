@@ -88,9 +88,8 @@
 
 .container {
     display: flex;
-    margin-left: 145px;
-    margin-bottom: 150px;
-height: 720px;
+    margin-bottom: 227px;
+
 
 }
 
@@ -100,7 +99,7 @@ height: 720px;
     width: 254px;
     height: 630px;
     position: relative;
-
+    margin-left: 145px;
 }
 
 /* .container__text {
@@ -126,7 +125,322 @@ height: 720px;
 
 .container__images_poster {
     position: absolute;
-    margin: 100px 0px 0px 30px;
+    margin: 100px 0px 0px 175px;
     z-index: 5;
 
+}
+
+.container__text {
+    max-width: 418px;
+    margin: 177px 0px 0px 306px;
+}
+
+.container__text_ordinal-number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 70%;
+    color: #FF9635;
+    padding-bottom: 10px;
+}
+
+.container__text_headline_black {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 78px;
+    color: #000000;
+    padding-bottom: 40px;
+}
+
+.container__text_production_black {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 40px;
+}
+
+.container__text_description_black {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 70px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    color: #000000;
+    padding: 0px;
+}
+
+.btn img {
+    max-width: 30px;
+    max-height: 30px;
+    padding-left: 9px;
+}
+
+.btn:hover {
+    background-color: khaki;
+    border-top: 1px solid #F08726;
+    border-bottom: 1px solid #F08726;
+    box-shadow: 2px 5px 70px #F08726 ;
+}
+
+/* Hounting of Hill House */
+
+
+
+.container__images_orange_right {
+    display: flex;
+    background-color: #FF9635;
+    width: 254px;
+    height: 630px;
+    position: relative;
+    margin-right: 145px;
+    margin-left: 306px;
+}
+
+.container__images_poster_right {
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    padding: 100px 145px 0px 112px;
+    
+}
+
+/* Sex Education */
+
+.container_horizontal {
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.container_horizontal__images_poster {
+    position: relative;
+}
+
+.container_horizontal__images_black {
+    position: absolute;
+    background-color: #000000;
+    margin: 45px 0px 45px 63px;
+    z-index: 5;
+    width: 642px;
+    height: 571px;
+}
+
+.container_horizontal__text {
+    position: absolute;
+    background-color: transparent;
+    margin: 125px 0px 125px 175px;
+    z-index: 10;
+    max-width: 418px;
+}
+
+.container_horizontal__text_ordinal-number {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 70%;
+    color: #FF9635;
+    padding-bottom: 10px;
+}
+
+.container_horizontal__text_headline_white{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 58px;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+
+}
+
+.container_horizontal__text__production_white {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+}
+
+.container_horizontal__text__description_white {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding-bottom: 70px;
+}
+
+.btn_white {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    background-color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.btn_white img {
+    padding-left: 9px;
+}
+
+.btn_white:hover {
+    box-shadow: 0px -2px 30px;
+    border-top:1px solid #F08726 ;
+    border-bottom:1px solid #F08726 ;
+}
+
+.container_horizontal__images_grade {
+    z-index: 15;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+    align-self: flex-end;
+    max-width: 56px;
+    max-height: 60px;
+    margin-left: -200px;
+    margin-bottom: 58px;
+}
+
+.container_horizontal__images_rate {
+    margin-left: 0px;
+    margin-bottom: 50px;
+    max-height: 60px;
+    z-index: 15;
+    align-self: flex-end;
+}
+
+/* MindHunter */
+
+.container_vertical {
+    display: flex;
+    margin-bottom: 150px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container_vertical__images_orange {
+    display: flex;
+    background-color: #FF9635;
+    width: 254px;
+    height: 630px;
+    position: relative;
+    margin-left: 145px;
+}
+
+.container_vertical__images_grade {
+    padding: 27px 0px 27px 69px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+    max-width: 56px;
+    max-height: 60px;
+}
+
+.container_vertical__images_rate {
+    padding: 20px 0px;
+    max-height: 60px;
+}
+
+.container_vertical__images_poster {
+    position: absolute;
+    margin: 100px 0px 0px 175px;
+    z-index: 5;
+
+}
+
+
+.container_vertical__text {
+    max-width: 418px;
+    margin: -172px 255px 0px 175px;
+}
+
+.container_vertical__text_ordinal-number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 70%;
+    color: #FF9635;
+    padding-bottom: 10px;
+}
+
+.container_vertical__text_headline_black {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 78px;
+    color: #000000;
+    padding-bottom: 40px;
+}
+
+.container_vertical__text_production_black {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 40px;
+}
+
+.container_vertical__text_description_black {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 70px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    color: #000000;
+    padding: 0px;
+}
+
+/* Dark */
+
+.container_vertical__images_right_orange {
+    display: flex;
+    background-color: #FF9635;
+    width: 254px;
+    height: 630px;
+    position: relative;
+    margin-right: 145px;
+    margin-left: 306px;
+    margin-top: 300px;
+}
+
+.container_vertical__images_right_poster {
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    padding: 100px 145px 0px 112px;
+    margin-top: 300px;
+}
+
+.container_vertical__text_right {
+    max-width: 418px;
+    margin: 128px 175px 0px -200px ;
 }
