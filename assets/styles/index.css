@@ -461,27 +461,123 @@
 }
 
 .slider__item {
-    padding-left: 65px;
+    padding-right: 65px;
     overflow: hidden;
 }
 
+
 .slick-arrow:last-child {
-    padding-right:94px ;
-    padding-left: 50px;
-    min-width: 40px;
-    min-height: 40px;
+    padding-right:70px ;
+
 }
 
 .slick-arrow:first-child {
-    padding-right:50px ;
-    padding-left: 94px;
-    min-width: 40px;
-    min-height: 40px;
+    padding-right:65px ;
+    padding-left: 70px;
+    padding-top: 194px;
+    width: 40px;
+    height: 40px;
 }
 
-.slider__item_picture img {
-    width: 220px;
+.slider__item_picture {
+    max-width: 224px;
 }
 
+.slider__item_text {
+    padding-top: 20px;
+}
+
+.slider__item_text_main {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    padding-bottom: 3px;
+}
+
+.slider__item_text_secondary {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+}
 
 /* Footer */
+
+.footer {
+    margin-top: 150px;
+    background-color: #FF9635;
+}
+
+.footer-menu {
+    display: flex;
+    padding: 50px 0px 50px 63px ;
+    max-width: 856px;
+    
+}
+
+.footer-menu_title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    padding-bottom: 34px;
+}
+
+.footer-menu a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.footer-menu_sections{
+    margin-right: 141px;
+}
+
+.footer-menu_about {
+    max-width: 350px;
+    margin-right: 100px;
+}
+
+.footer-menu_contacts {
+    max-width: 150px;
+}
+.footer-bottom {
+    display: flex;
+    background-color: #F08726;
+    padding: 63px 38px;
+
+}
+
+.footer-bottom__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-right: 39px;
+}
+
+.footer-bottom_links {
+    display: flex;
+    align-items: center;
+    margin-right:246px ;
+}
+
+.footer-bottom_links img {
+    padding-right: 15px;
+}
+
+.footer-bottom_copy {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+}
+
