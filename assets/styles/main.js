@@ -1,3 +1,6 @@
+$(function() {
+    
+})
 $('.slider').slick({
     slidesToScroll: 1,
     slidesToShow: 4,
