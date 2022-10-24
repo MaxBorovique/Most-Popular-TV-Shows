@@ -1,5 +1,812 @@
-@media (max-width: 840px) {
-    .main-screen__decoration {
+@media (max-width:450px){
+
+    body {
+        max-width: 450px;
+    }
+    .container{
+        display: flex;
         flex-wrap: wrap;
+    }
+    body.lock {
+        overflow: hidden;
+        margin: 0 auto;
+
+    }
+    .header_container {
+        max-width: 930px;
+        margin: 0 auto;
+        padding: 5px 20px;
+    }
+    .header__body {
+        height: 40px;
+    }
+    .header__logo {
+        flex: 0 0 30px;
+    }
+
+    .header__list {
+        display: block;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index: 3;
+
+    }
+    .header__burger span {
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 14px;
+        align-items: center;
+        transition: all 0.3s ease 0s;
+        
+    }
+
+    .header__burger::before,
+    .header__burger::after {
+        content: "";
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        height: 2px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header__burger::before {
+        top: 0;
+    }
+    .header__burger::after {
+        bottom: 0 ;
+    }
+
+    .header__burger.active span {
+        transform: scale(0);
+    }
+    .header__burger.active::before {
+        transform:rotate(45deg);
+        top: 13px;
+    }
+
+    .header__burger.active::after {
+        transform:rotate(-45deg);
+        bottom: 14px;
+    }
+    .header__menu {
+        position: fixed;
+        top: -1000%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F08726;
+        font-size: 30px;
+        line-height: 25px;
+        padding: 55px 20px 40px 30px;
+        z-index: 2;
+        transition: all 0.3s ease 0s;
+    }
+    .header__menu.active {
+        top: 0;
+    }
+    .header__list li {
+        margin: 0px 0px 25px 0px;
+    }
+
+    /* All styles */
+    .main-screen {
+        background-color: #FF9635;
+        padding: 0px;
+    }
+    
+    .main-screen__decoration {
+        display: flex;
+        max-height: 160px;
+        overflow: hidden;
+    }
+    
+    .main-screen__text {
+        max-width: 275px;
+        background-color: #FF9635;
+        margin-bottom: 60px;
+    }
+    
+    .main-screen__text h1 {
+        max-width: 275px;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 130%;
+        color: #000000;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+    
+    .main-screen__text p {
+        max-width: 266px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.8);
+        padding-left: 20px;
+        padding-bottom: 62px;   
+    }
+    /* Poster See */
+    
+    .container {
+        max-width: 450px;
+        margin-bottom: 68px;
+    
+    
+    }
+    .container__images {
+        display: flex;
+        max-height: 240px;
+    }
+    .container__images_orange {
+        background-color: #FF9635;
+        width: 280px;
+        height: 140px;
+        position: relative;
+        margin-left: 0px;
+        margin-right: 40px;
+    }
+    
+    .container__images_grade {
+        padding: 10px 5px 12px 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        max-width: 19px;
+        max-height: 17px;
+    }
+    .container__images_rate img {
+        width: 100%;
+    }
+    .container__images_rate {
+        padding: 0px 30px;
+        max-height: 40px;
+        max-width:40px ;
+        padding-left: 0px;
+    }
+    
+    .container__images_poster {
+        background-image: url(/assets/images/See.png);
+        background-size:cover ;
+        background-position: 50% 40%;
+        width: 280px;
+        height: 200px;
+        position: absolute;
+        margin: 40px 20px 0px 20px;
+        z-index: 2;
+    
+    }
+    
+    .container__text {
+        width: 280px;
+        margin: 0 auto;
+        padding: 120px 20px 20px 20px;
+
+    }
+    
+    .container__text_ordinal-number {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 15px;
+        font-style: normal;
+        color: #FF9635;
+        padding-bottom: 5px;
+    }
+    
+    .container__text_headline_black {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: #000000;
+        padding-bottom: 10px;
+    }
+    
+    .container__text_production_black {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.7);
+        padding-bottom: 10px;
+    }
+    
+    .container__text_description_black {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.8);
+        padding-bottom: 20px;
+    }
+    
+    .btn {
+        display: flex;
+        align-items: center;
+        border: 1px solid #fff;
+        cursor: pointer;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 36px;
+        color: #000000;
+        padding: 0px;
+    }
+    
+    .btn img {
+        max-width: 30px;
+        max-height: 30px;
+        padding-left: 9px;
+    }
+    
+    .btn:hover {
+        background-color: khaki;
+        border-top: 1px solid #F08726;
+        border-bottom: 1px solid #F08726;
+        box-shadow: 2px 5px 70px #F08726 ;
+    }
+    
+    /* Hounting of Hill House */
+    
+    
+    
+    .container__images_orange_right {
+        display: flex;
+        background-color: #FF9635;
+        width: 280px;
+        height: 140px;
+        position: relative;
+        margin: 68px 0px 0px 40px;
+    }
+    
+    .container__images_poster_right {
+        background-image: url(/assets/images/Hounting_of_HH.png);
+        background-size: cover;
+        background-position: 10% 90%;
+        width: 280px;
+        height: 200px;
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        margin: 108px 18px 0px 18px;
+        order: 0;
+        
+    }
+    
+    .container__text_right {
+        width: 280px;
+        margin: 0 auto;
+        padding: 120px 20px 20px 20px;
+        order: 1;
+    }
+
+    .container__text_right_ordinal-number {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 15px;
+        font-style: normal;
+        color: #FF9635;
+        padding-bottom: 5px;
+    }
+    
+    .container__text_right_headline_black {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: #000000;
+        padding-bottom: 10px;
+    }
+    
+    .container__text_right_production_black {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.7);
+        padding-bottom: 10px;
+    }
+    
+    .container__text_right_description_black {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.8);
+        padding-bottom: 20px;
+    }
+    /* Sex Education */
+    
+    .container_horizontal {
+        display: flex;
+        margin-bottom: 60px;
+    }
+    
+    .container_horizontal__images_poster_first {
+        background-image: url(/assets/images/Sex_Education.png);
+        background-size: cover;
+        background-position: 60% 0;
+        max-width: 320px;
+        height: 200px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .container_horizontal__images_poster_second {
+        background-image: url(/assets/images/Peaky_Blinders.png);
+        background-size: cover;
+        background-position: 60% 0;
+        max-width: 320px;
+        height: 200px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    
+    .container_horizontal__images_poster_last {
+        background-image: url(/assets/images/Breaking_Bad.png);
+        background-size: cover;
+        background-position: 60% 0;
+        max-width: 320px;
+        height: 200px;
+        position: relative;
+        z-index: 2;
+    }
+    .container_horizontal__images_black {
+        background-color: #000000;
+        margin: 200px 0px 0px 0px;
+        z-index: 2;
+        width: 320px;
+        height: 329px;
+    }
+    
+    .container_horizontal__text {
+        background-color: transparent;
+        margin: 220px 20px 20px 20px;
+        z-index: 2;
+        max-width: 280px;
+    }
+    
+    .container_horizontal__text_ordinal-number {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 15px;
+        color: #FF9635;
+        padding-bottom: 5px;
+    }
+    
+    .container_horizontal__text_headline_white{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: #FFFFFF;
+        padding-bottom: 10px;
+    
+    }
+    
+    .container_horizontal__text__production_white {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        padding-bottom: 10px;
+    }
+    
+    .container_horizontal__text__description_white {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+    }
+    
+    .btn_white {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+        background-color: #000;
+        border: 1px solid #000;
+        cursor: pointer;
+    }
+    
+    .btn_white img {
+        padding-left: 9px;
+    }
+    
+    .btn_white:hover {
+        box-shadow: 0px -2px 30px;
+        border-top:1px solid #F08726 ;
+        border-bottom:1px solid #F08726 ;
+    }
+    
+    .container_horizontal__images_grade {
+        z-index: 352;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        align-self: flex-end;
+        max-width: 21px;
+        max-height: 17px;
+        margin-left: -80px;
+        margin-bottom: 12px;
+    }
+    
+    .container_horizontal__images_rate {
+        margin-left: 0px;
+        margin-bottom: 30px;
+        height: 15px;
+        width: 25px;
+        z-index: 15;
+        align-self: flex-end;
+    }
+    /* MindHunter */
+
+    .container_vertical {
+        max-width: 450px;
+        margin-top: 389px;
+        margin-bottom: 68px;
+        flex-wrap: wrap;
+    }
+    
+    .container_vertical__images_orange {
+        background-color: #FF9635;
+        width: 280px;
+        height: 140px;
+        position: relative;
+        margin-left: 0px;
+        margin-right: 40px;
+    }
+    
+    .container_vertical__images_grade {
+        padding: 10px 5px 12px 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        max-width: 19px;
+        max-height: 17px;
+    }
+    
+    .container_vertical__images_rate {
+        padding: 0px 30px;
+        max-height: 40px;
+        max-width:40px ;
+        padding-left: 0px;
+    }
+    .container_vertical__images_rate img {
+        width: 100%;
+    }
+    .container__images_grade {
+        padding: 10px 5px 12px 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        max-width: 19px;
+        max-height: 17px;
+    }
+
+    .container_vertical__images_poster {
+        background-image: url(/assets/images/Mindhunter.png);
+        background-size:cover ;
+        background-position: 50% 40%;
+        width: 280px;
+        height: 200px;
+        position: absolute;
+        margin: 40px 20px 0px 20px;
+        z-index: 2;
+    }
+    
+    
+    .container_vertical__text {
+        width: 280px;
+        margin: 0 auto;
+        padding: 120px 20px 20px 20px;
+    }
+    
+    .container_vertical__text_ordinal-number {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 15px;
+        font-style: normal;
+        color: #FF9635;
+        padding-bottom: 5px;
+    }
+    
+    .container_vertical__text_headline_black {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: #000000;
+        padding-bottom: 10px;
+    }
+    
+    .container_vertical__text_production_black {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.7);
+        padding-bottom: 10px;
+    }
+    
+    .container_vertical__text_description_black {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.8);
+        padding-bottom: 20px;
+    }
+    
+    .btn {
+        display: flex;
+        align-items: center;
+        border: 1px solid #fff;
+        cursor: pointer;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 36px;
+        color: #000000;
+        padding: 0px;
+    }
+    
+    /* Dark */
+    .container_vertical__images_right_orange {
+        display: flex;
+        background-color: #FF9635;
+        width: 280px;
+        height: 140px;
+        position: relative;
+        margin: 68px 0px 0px 40px;
+    }
+    
+    .container_vertical__images_right_poster {
+        background-image: url(/assets/images/Dark.png);
+        background-size: cover;
+        background-position: 10% 90%;
+        width: 280px;
+        height: 200px;
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        margin: 108px 18px 0px 18px;
+        order: 0;
+        
+    }
+    .container_vertical__images {
+        order: -1;
+    }
+    .container_vertical__text_right  {
+        width: 280px;
+        margin: 0 auto;
+        padding: 120px 20px 20px 20px;
+        order: 3;
+    }
+
+    .container__text_right_ordinal-number {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 15px;
+        font-style: normal;
+        color: #FF9635;
+        padding-bottom: 5px;
+    }
+    
+    .container__text_right_headline_black {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: #000000;
+        padding-bottom: 10px;
+    }
+    
+    .container__text_right_production_black {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.7);
+        padding-bottom: 10px;
+    }
+    
+    .container__text_right_description_black {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.8);
+        padding-bottom: 20px;
+    }
+
+
+    .container_vertical__images_right_poster_sherlock {
+        background-image: url(/assets/images/Sherlock.png);
+        background-size: cover;
+        background-position: 50% 30%;
+        width: 280px;
+        height: 200px;
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        margin: 108px 18px 0px 18px;
+    }
+
+    .container__images_poster_goth {
+        background-image: url(/assets/images/GoTh.png);
+        background-position: 50% 50%;
+        width: 280px;
+        height: 200px;
+        position: absolute;
+        margin: 40px 20px 0px 20px;
+        z-index: 2;
+
+    }
+    
+    
+    .title {
+        max-width: 152px;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 41px;
+        color: #000000;
+        margin: 388px 148px 20px 20px;
+    }
+    
+    .slider {
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .slick-arrow:last-child {
+        padding-right:20px ;
+        padding-left: 0px;
+        padding-top: 144px;
+        width: 40px;
+        height: 40px;
+    
+    }
+    
+    .slick-arrow:first-child {
+        padding-right:0px ;
+        padding-left: 20px;
+        padding-top: 144px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .slider__item_picture {
+        max-width: 170px;
+    }
+    
+    .slider__item_text {
+        padding-top: 20px;
+    }
+    
+    .slider__item_text_main {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        padding-bottom: 5px;
+    }
+    
+    .slider__item_text_secondary {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 60px;
+    }
+    
+    /* Footer */
+    
+    .footer {
+        margin-top: 100px;
+        background-color: #FF9635;
+    }
+    
+    .footer-menu {
+        display: flex;
+        padding: 40px ;
+        max-width: 661px;
+        
+    }
+    
+    .footer-menu_title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: #000000;
+        padding-bottom: 34px;
+    }
+    
+    .footer-menu a{
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 35px;
+        color: #000000;
+    }
+    
+    .footer-menu_sections{
+        margin-right: 50px;
+    }
+    
+    .footer-menu_about {
+        max-width: 260px;
+        margin-right: 82px;
+    }
+    
+    .footer-menu_contacts {
+        max-width: 150px;
+    }
+    .footer-bottom {
+        display: flex;
+        background-color: #F08726;
+        padding: 63px 38px;  
+    
+    }
+    
+    .footer-bottom__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        margin-right: 39px;
+    }
+    
+    .footer-bottom_links {
+        display: flex;
+        align-items: center;
+        margin-right:246px ;
+    }
+    
+    .footer-bottom_links img {
+        padding-right: 15px;
+    }
+    
+    .footer-bottom_copy {
+        display: flex;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(0, 0, 0, 0.4);
+        align-items: center;
+    }
+
+    .container_vertical__images_poster_mirror {
+        background-image: url(/assets/images/BlackMirror.png);
+        background-size: cover;
+        background-position: 90% 40%;
+        height: 200px;
+        width: 280px;
+        position: absolute;
+        z-index: 2;
+        margin: 40px 20px 0px 20px;
+
+
     }
 }
