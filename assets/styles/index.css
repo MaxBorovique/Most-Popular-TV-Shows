@@ -456,6 +456,10 @@
 }
 
 .container_vertical__images_poster {
+    background-image: url(/assets/images/Mindhunter.png);
+    background-size: cover;
+    width: 418px;
+    height: 618px;
     position: absolute;
     margin: 100px 0px 0px 175px;
     z-index: 5;
@@ -531,11 +535,14 @@
 }
 
 .container_vertical__images_right_poster {
+    background-image: url(/assets/images/Dark.png);
+    background-size: cover;
+    width: 418px;
+    height: 618px;
     display: flex;
     position: absolute;
     z-index: 5;
-    padding: 100px 145px 0px 112px;
-    margin-top: 300px;
+    margin: 400px 145px 0px 112px;
 }
 
 .container_vertical__text_right  {
@@ -692,6 +699,10 @@ body {
 }
 
 @media (max-width:930px){
+
+    body.lock {
+        overflow: hidden;
+    }
     .header_container {
         max-width: 930px;
         margin: 0 auto;
@@ -1136,9 +1147,7 @@ body {
     .container_vertical {
         display: flex;
         margin-bottom: 100px;
-        max-width: 930px;
-        flex-wrap: nowrap;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     
     .container_vertical__images_orange {
@@ -1166,21 +1175,21 @@ body {
     
     .container_vertical__images_poster {
         background-image: url(/assets/images/Mindhunter.png);
-        width: 258px;
+        background-size: cover;
         height: 381px;
-        display: flex;
+        width: 257px;
         position: absolute;
         z-index: 2;
         margin: 60px 65px 0px 60px;
-        order: 1;
     }
     
     
     .container_vertical__text {
         display: flex;
-        max-width: 322px;
-        margin: 60px 0px 0px 40px;
-        order: 2;
+        max-width: 277px;
+        margin: 60px 40px 0px 0px;
+        flex-direction: column;
+        order: 1;
     }
     
     .container_vertical__text_ordinal-number {
@@ -1233,16 +1242,19 @@ body {
     }
     
     /* Dark */
-    
+    .container_vertical__images {
+        order: 0;
+    }
+    .container_vertical__images_right {
+        order: 3;
+    }
     .container_vertical__images_right_orange {
         display: flex;
         background-color: #FF9635;
         width: 143px;
         height: 361px;
         position: relative;
-        margin-right: 40px;
-        margin-left: 199px;
-        order: 4;
+        margin: 100px 40px 0px 135px;
     }
     
     .container_vertical__images_right_poster {
@@ -1254,24 +1266,25 @@ body {
         position: absolute;
         z-index: 2;
         padding: 0;
-        margin: 60px 19px 0px 65px;
-        order: 4;
+        margin: 160px 40px 0px 0px;
     }
     
     .container_vertical__text_right  {
         display: flex;
         max-width: 322px;
-        margin: 60px 0px 0px 40px;
-        order: 3;
+        margin: 160px 64px 0px 40px;
+        flex-direction: column;
+        float: right;
+        order: 2;
     }
     
     .title {
         font-weight: 600;
-        font-size: 64px;
-        line-height: 86px;
+        font-size: 50px;
+        line-height: 60px;
         color: #000000;
-        margin-bottom: 83px;
-        margin-left: 175px;
+        margin-bottom: 50px;
+        margin-left: 40px;
     }
     
     .slider {
@@ -1327,14 +1340,14 @@ body {
     /* Footer */
     
     .footer {
-        margin-top: 150px;
+        margin-top: 100px;
         background-color: #FF9635;
     }
     
     .footer-menu {
         display: flex;
-        padding: 50px 0px 50px 63px ;
-        max-width: 856px;
+        padding: 40px ;
+        max-width: 661px;
         
     }
     
@@ -1356,12 +1369,12 @@ body {
     }
     
     .footer-menu_sections{
-        margin-right: 141px;
+        margin-right: 50px;
     }
     
     .footer-menu_about {
-        max-width: 350px;
-        margin-right: 100px;
+        max-width: 260px;
+        margin-right: 82px;
     }
     
     .footer-menu_contacts {
@@ -1370,7 +1383,7 @@ body {
     .footer-bottom {
         display: flex;
         background-color: #F08726;
-        padding: 63px 38px;
+        padding: 63px 38px;  
     
     }
     
