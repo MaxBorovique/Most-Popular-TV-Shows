@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="/slick/slick.css">
     <link rel="stylesheet" href="./slick/slick-theme.css">
     <link rel="stylesheet" href="./assets/Styles/index.css">
+    <!-- <link rel="stylesheet" href="./assets/Styles/adaptive.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -38,7 +39,7 @@
 </head>
 
 <body class="page">
-    <header class="header">
+    <!-- <header class="header">
         <div class="header__logo"><img src="./assets/images/Logo.png" role="presentation" aria-hidden="true" /></div>
         <nav class="header__menu">
             <ul>
@@ -50,6 +51,25 @@
                 <li><a href="#">Contacts</a></li>
             </ul>
         </nav>
+    </header> -->
+    <header class="header">
+        <div class="header_container">
+            <div class="header__body">
+                <a class="header__logo" href="#"><img src="./assets/images/Logo.png" alt=""></a>
+                <div class="header__burger"><span></span></div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li><a class="header__link" href="#">Films</a></li>
+                        <li><a class="header__link" href="#">TV shows</a></li>
+                        <li><a class="header__link" href="#">Compilations</a></li>
+                        <li><a class="header__link" href="#">Trailers</a></li>
+                        <li><a class="header__link" href="#">About us</a></li>
+                        <li><a class="header__link" href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
     </header>
     <main>
         <section class="main-screen">
@@ -83,7 +103,7 @@
         <section class="container">
             <div class="container__images">
                 <div class="container__images_poster">
-                    <img src="./assets/images/Optimized_images/See.png" role="presentation" aria-hidden="true" />
+                    <!-- <img src="./assets/images/Optimized_images/See.png" role="presentation" aria-hidden="true" /> -->
                 </div>
                 <div class="container__images_orange">
                     <div class="container__images_grade">
@@ -109,12 +129,12 @@
             </div>
         </section>
         <section class="container">
-            <div class="container__text">
-                <h4 class="container__text_ordinal-number">02</h4>
-                <h3 class="container__text_headline_black">The Haunting
+            <div class="container__text_right">
+                <h4 class="container__text_right_ordinal-number">02</h4>
+                <h3 class="container__text_right_headline_black">The Haunting
                     of Hill House</h3>
-                <p class="container__text_production_black">2018, USA</p>
-                <p class="container__text_description_black">
+                <p class="container__text_right_production_black">2018, USA</p>
+                <p class="container__text_right_description_black">
                     Flashing between past and present,
                     a fractured family confronts haunting memories of their old home and the
                     terrifying events that drove them from it.
@@ -124,8 +144,8 @@
             </div>
             <div class="container__images">
                 <div class="container__images_poster_right">
-                    <img src="./assets/images/Optimized_images/Hounting_of_HH.png" role="presentation"
-                        aria-hidden="true" />
+                    <!-- <img src="./assets/images/Optimized_images/Hounting_of_HH.png" role="presentation"
+                        aria-hidden="true" /> -->
                 </div>
                 <div class="container__images_orange_right">
                     <div class="container__images_grade">
@@ -139,7 +159,7 @@
         </section>
         <section class="container_horizontal">
             <div class="container_horizontal__images">
-                <div class="container_horizontal__images_poster"><img src="/assets/images/Sex_Education.png" /></div>
+                <div class="container_horizontal__images_poster_first"></div>
             </div>
             <div class="container_horizontal__images_grade">
                 <p>8.3</p>
@@ -164,7 +184,7 @@
         <section class="container_vertical">
             <div class="container_vertical__images">
                 <div class="container_vertical__images_poster">
-                    <img src="./assets/images/Optimized_images/Mindhunter.png" role="presentation" aria-hidden="true" />
+                    <!-- <img src="./assets/images/Optimized_images/Mindhunter.png" role="presentation" aria-hidden="true" /> -->
                 </div>
                 <div class="container_vertical__images_orange">
                     <div class="container_vertical__images_grade">
@@ -177,7 +197,7 @@
             </div>
             <div class="container_vertical__images_right">
                 <div class="container_vertical__images_right_poster">
-                    <img src="./assets/images/Optimized_images/Dark.png" role="presentation" aria-hidden="true" />
+                    <!-- <img src="./assets/images/Optimized_images/Dark.png" role="presentation" aria-hidden="true" /> -->
                 </div>
                 <div class="container_vertical__images_right_orange">
                     <div class="container_vertical__images_grade">
@@ -216,7 +236,7 @@
         <!-- Peacky Blinders -->
         <section class="container_horizontal">
             <div class="container_horizontal__images">
-                <div class="container_horizontal__images_poster"><img src="/assets/images/Peaky_Blinders.png" /></div>
+                <div class="container_horizontal__images_poster_second"></div>
             </div>
             <div class="container_horizontal__images_grade">
                 <p>8.8</p>
@@ -321,7 +341,7 @@
         <!-- Breaking bad -->
         <section class="container_horizontal">
             <div class="container_horizontal__images">
-                <div class="container_horizontal__images_poster"><img src="/assets/images/Breaking_Bad.png" /></div>
+                <div class="container_horizontal__images_poster_last"></div>
             </div>
             <div class="container_horizontal__images_grade">
                 <p>9.4</p>

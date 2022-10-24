@@ -12,38 +12,61 @@
 /* Header */
 
 .header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #F08726;
+}
+
+.header::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background-color: #F08726; */
+    z-index: 2;
+
+}
+.header_container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10px 63px;
+}
+.header__body {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    background-color: #F08726;
-    max-height: 51px;
-}
-
-.header__logo {
-    max-width:36px ;
-    padding: 10px 0px 10px 63px ;
-}
-
-.header__menu ul {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-}
-
-.header__menu li {
-    padding: 8px 46px 8px 0px;
+    height: 51px;
     align-items: center;
 }
-
-.header__menu li:last-child {
-    padding-right: 63px;
+.header__logo {
+    flex: 0 0 36px;
+    z-index: 3;
+    position: relative;
 }
-
-.header__menu a {
+.header__logo img {
+    max-width: 100%;    
+    height: 31px;
+}
+.header__burger {
+    display: none;
+}
+.header__menu {
+}
+.header__list {
+    display: flex;
+    position: relative;
+    z-index: 2  ;
+}
+.header__list li {
+    list-style: none;
+    margin: 0px 0px 0px 48px;
+}
+.header__link {
     text-decoration: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 35px;
-    color: #000000;
+    color: #000000 ;
 }
 
 .main-screen {
@@ -55,6 +78,7 @@
     max-width: 1440px;
     display: flex;
     max-height: 293px;
+    overflow: hidden;
 }
 
 .main-screen__text {
@@ -124,9 +148,14 @@
 }
 
 .container__images_poster {
+    background-image: url(/assets/images/See.png);
+    background-size: cover;
+    background-position: inherit;
     position: absolute;
     margin: 100px 0px 0px 175px;
     z-index: 5;
+    width: 418px;
+    height: 618px;
 
 }
 
@@ -212,11 +241,56 @@
 }
 
 .container__images_poster_right {
+    background-image: url(/assets/images/Hounting_of_HH.png);
+    background-size: cover;
+    width: 418px;
+    height: 618px;
     display: flex;
     position: absolute;
-    z-index: 5;
-    padding: 100px 145px 0px 112px;
+    z-index: 2;
+    margin: 100px 145px 0px 112px;
     
+}
+
+.container__text_right {
+    max-width: 418px;
+    margin: 177px 0px 0px 317px;
+}
+
+.container__text_right_ordinal-number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 70%;
+    color: #FF9635;
+    padding-bottom: 10px;
+}
+
+.container__text_right_headline_black {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 78px;
+    color: #000000;
+    padding-bottom: 40px;
+}
+
+.container__text_right_production_black {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 40px;
+}
+
+.container__text_right_description_black {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 70px;
 }
 
 /* Sex Education */
@@ -225,9 +299,33 @@
     display: flex;
     margin-bottom: 150px;
 }
-
-.container_horizontal__images_poster {
+.container_horizontal__images_poster_first {
+    background-image: url(/assets/images/Sex_Education.png);
+    background-size: cover;
+    width: 1440px;
+    height: 661px;
     position: relative;
+    display: flex;
+
+}
+.container_horizontal__images_poster_second {
+    background-image: url(/assets/images/Peaky_Blinders.png);
+    background-size: cover;
+    width: 1440px;
+    height: 661px;
+    position: relative;
+    display: flex;
+}
+
+
+.container_horizontal__images_poster_last {
+    background-image: url(/assets/images/Breaking_Bad.png);
+    background-size: cover;
+    width: 1440px;
+    height: 661px;
+    position: relative;
+    display: flex;
+
 }
 
 .container_horizontal__images_black {
@@ -580,4 +678,763 @@
     color: rgba(0, 0, 0, 0.4);
     align-items: center;
 }
+
+/* Burger */
+
+
+body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: #000000;
+}
+
+@media (max-width:930px){
+    .header_container {
+        max-width: 930px;
+        margin: 0 auto;
+        padding: 5px 20px;
+    }
+    .header__body {
+        height: 40px;
+    }
+    .header__logo {
+        flex: 0 0 30px;
+    }
+
+    .header__list {
+        display: block;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index: 3;
+
+    }
+    .header__burger span {
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 14px;
+        align-items: center;
+        transition: all 0.3s ease 0s;
+        
+    }
+
+    .header__burger::before,
+    .header__burger::after {
+        content: "";
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        height: 2px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header__burger::before {
+        top: 0;
+    }
+    .header__burger::after {
+        bottom: 0 ;
+    }
+
+    .header__burger.active span {
+        transform: scale(0);
+    }
+    .header__burger.active::before {
+        transform:rotate(45deg);
+        top: 13px;
+    }
+
+    .header__burger.active::after {
+        transform:rotate(-45deg);
+        bottom: 14px;
+    }
+    .header__menu {
+        position: fixed;
+        top: -1000%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F08726;
+        font-size: 30px;
+        line-height: 25px;
+        padding: 55px 20px 40px 30px;
+        z-index: 2;
+        transition: all 0.3s ease 0s;
+    }
+    .header__menu.active {
+        top: 0;
+    }
+    .header__list li {
+        margin: 0px 0px 25px 0px;
+    }
+
+    /* All styles */
+    .main-screen {
+        background-color: #FF9635;
+        padding: 0px;
+    }
+    
+    .main-screen__decoration {
+        display: flex;
+        max-height: 200px;
+        overflow: hidden;
+    }
+    
+    .main-screen__text {
+        max-width: 930px;
+        background-color: #FF9635;
+        margin-bottom: 70px;
+    }
+    
+    .main-screen__text h1 {
+        max-width: 440px;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 77px;
+        color: #000000;
+        padding-left: 30px;
+        padding-bottom: 20px;
+        padding-top: 30px;
+    }
+    
+    .main-screen__text p {
+        max-width: 420px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.8);
+        padding-left: 30px;
+        padding-bottom: 70px;   
+    }
+    /* Poster See */
+    
+    .container {
+        display: flex;
+        margin-bottom: 100px;
+    
+    
+    }
+    
+    .container__images_orange {
+        display: flex;
+        background-color: #FF9635;
+        width: 143px;
+        height: 361px;
+        position: relative;
+        margin-left: 40px;
+    }
+    
+    /* .container__text {
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+    } */
+    
+    .container__images_grade {
+        padding: 15px 10px 16px 30px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        max-width: 33px;
+        max-height: 29px;
+    }
+    .container__images_rate img {
+        width: 100%;
+    }
+    .container__images_rate {
+        padding: 10px 30px;
+        max-height: 40px;
+        max-width:40px ;
+        padding-left: 0px;
+    }
+    
+    .container__images_poster {
+        background-image: url(/assets/images/See.png);
+        background-size: cover;
+        width: 258px;
+        height: 381px;
+        position: absolute;
+        margin: 60px 0px 0px 60px;
+        z-index: 2;
+    
+    }
+    
+    .container__text {
+        max-width: 322px;
+        margin: 60px 0px 0px 199px;
+    }
+    
+    .container__text_ordinal-number {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 21px;
+        color: #FF9635;
+        padding-bottom: 10px;
+    }
+    
+    .container__text_headline_black {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: #000000;
+        padding-bottom: 20px;
+    }
+    
+    .container__text_production_black {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: rgba(0, 0, 0, 0.7);
+        padding-bottom: 20px;
+    }
+    
+    .container__text_description_black {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.8);
+        padding-bottom: 30px;
+    }
+    
+    .btn {
+        display: flex;
+        align-items: center;
+        border: 1px solid #fff;
+        cursor: pointer;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 36px;
+        color: #000000;
+        padding: 0px;
+    }
+    
+    .btn img {
+        max-width: 30px;
+        max-height: 30px;
+        padding-left: 9px;
+    }
+    
+    .btn:hover {
+        background-color: khaki;
+        border-top: 1px solid #F08726;
+        border-bottom: 1px solid #F08726;
+        box-shadow: 2px 5px 70px #F08726 ;
+    }
+    
+    /* Hounting of Hill House */
+    
+    
+    
+    .container__images_orange_right {
+        display: flex;
+        background-color: #FF9635;
+        width: 143px;
+        height: 361px;
+        position: relative;
+        margin-right: 40px;
+        margin-left: 199px;
+    }
+    
+    .container__images_poster_right {
+        background-image: url(/assets/images/Hounting_of_HH.png);
+        background-size: cover;
+        width: 258px;
+        height: 381px;
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        margin: 60px 19px 0px 65px;
+        
+    }
+    
+    .container__text_right {
+        max-width: 322px;
+        margin: 60px 0px 0px 40px;
+    }
+
+    .container__text_right_ordinal-number {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 21px;
+        color: #FF9635;
+        padding-bottom: 10px;
+    }
+    
+    .container__text_right_headline_black {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: #000000;
+        padding-bottom: 20px;
+    }
+    
+    .container__text_right_production_black {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: rgba(0, 0, 0, 0.7);
+        padding-bottom: 20px;
+    }
+    
+    .container__text_right_description_black {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.8);
+        padding-bottom: 30px;
+    }
+    /* Sex Education */
+    
+    .container_horizontal {
+        display: flex;
+        margin-bottom: 110px;
+    }
+    
+    .container_horizontal__images_poster_first {
+        background-image: url(/assets/images/Sex_Education.png);
+        background-size: cover;
+        max-width: 744px;
+        height: 419px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .container_horizontal__images_poster_second {
+        background-image: url(/assets/images/Peaky_Blinders.png);
+        background-size: cover;
+        max-width: 744px;
+        height: 419px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    
+    .container_horizontal__images_poster_last {
+        background-image: url(/assets/images/Breaking_Bad.png);
+        background-size: cover;
+        width: 744px;
+        height: 419px;
+        position: relative;
+        z-index: 2;
+    }
+    .container_horizontal__images_black {
+        position: absolute;
+        background-color: #000000;
+        margin: 20px 0px 20px 15px;
+        z-index: 2;
+        width: 372px;
+        height: 379px;
+    }
+    
+    .container_horizontal__text {
+        position: absolute;
+        background-color: transparent;
+        margin: 25px;
+        z-index: 3;
+        max-width: 322px;
+    }
+    
+    .container_horizontal__text_ordinal-number {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 21px;
+        color: #FF9635;
+        padding-bottom: 10px;
+    }
+    
+    .container_horizontal__text_headline_white{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+    
+    }
+    
+    .container_horizontal__text__production_white {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+    }
+    
+    .container_horizontal__text__description_white {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        padding-bottom: 30px;
+    }
+    
+    .btn_white {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+        background-color: #000;
+        border: 1px solid #000;
+        cursor: pointer;
+    }
+    
+    .btn_white img {
+        padding-left: 9px;
+    }
+    
+    .btn_white:hover {
+        box-shadow: 0px -2px 30px;
+        border-top:1px solid #F08726 ;
+        border-bottom:1px solid #F08726 ;
+    }
+    
+    .container_horizontal__images_grade {
+        z-index: 15;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 29px;
+        color: #FFFFFF;
+        align-self: flex-end;
+        max-width: 35px;
+        max-height: 39px;
+        margin-left: -98px;
+        margin-bottom: 36px;
+    }
+    
+    .container_horizontal__images_rate {
+        margin-left: 0px;
+        margin-bottom: 50px;
+        height: 30px;
+        width: 30px;
+        z-index: 15;
+        align-self: flex-end;
+    }
+    /* MindHunter */
+    
+    .container_vertical {
+        display: flex;
+        margin-bottom: 100px;
+        max-width: 930px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    
+    .container_vertical__images_orange {
+        background-color: #FF9635;
+        width: 143px;
+        height: 361px;
+        position: relative;
+        margin-left: 40px;
+    }
+    
+    .container_vertical__images_grade {
+        padding: 15px 8px 16px 30px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        max-width: 35px;
+        max-height: 30px;
+    }
+    
+    .container_vertical__images_rate {
+        padding: 0px 3px;
+        max-height: 30px;
+    }
+    
+    .container_vertical__images_poster {
+        background-image: url(/assets/images/Mindhunter.png);
+        width: 258px;
+        height: 381px;
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        margin: 60px 65px 0px 60px;
+        order: 1;
+    }
+    
+    
+    .container_vertical__text {
+        display: flex;
+        max-width: 322px;
+        margin: 60px 0px 0px 40px;
+        order: 2;
+    }
+    
+    .container_vertical__text_ordinal-number {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 21px;
+        color: #FF9635;
+        padding-bottom: 10px;
+    }
+    
+    .container_vertical__text_headline_black {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: #000000;
+        padding-bottom: 20px;
+    }
+    
+    .container_vertical__text_production_black {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: rgba(0, 0, 0, 0.7);
+        padding-bottom: 20px;
+    }
+    
+    .container_vertical__text_description_black {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.8);
+        padding-bottom: 30px;
+    }
+    
+    .btn {
+        display: flex;
+        align-items: center;
+        border: 1px solid #fff;
+        cursor: pointer;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 36px;
+        color: #000000;
+        padding: 0px;
+    }
+    
+    /* Dark */
+    
+    .container_vertical__images_right_orange {
+        display: flex;
+        background-color: #FF9635;
+        width: 143px;
+        height: 361px;
+        position: relative;
+        margin-right: 40px;
+        margin-left: 199px;
+        order: 4;
+    }
+    
+    .container_vertical__images_right_poster {
+        background-image: url(/assets/images/Dark.png);
+        background-size: cover;
+        width: 258px;
+        height: 381px;
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        padding: 0;
+        margin: 60px 19px 0px 65px;
+        order: 4;
+    }
+    
+    .container_vertical__text_right  {
+        display: flex;
+        max-width: 322px;
+        margin: 60px 0px 0px 40px;
+        order: 3;
+    }
+    
+    .title {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 86px;
+        color: #000000;
+        margin-bottom: 83px;
+        margin-left: 175px;
+    }
+    
+    .slider {
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .slider__item {
+        padding-right: 65px;
+        overflow: hidden;
+    }
+    
+    
+    .slick-arrow:last-child {
+        padding-right:70px ;
+    
+    }
+    
+    .slick-arrow:first-child {
+        padding-right:65px ;
+        padding-left: 70px;
+        padding-top: 194px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .slider__item_picture {
+        max-width: 224px;
+    }
+    
+    .slider__item_text {
+        padding-top: 20px;
+    }
+    
+    .slider__item_text_main {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+        padding-bottom: 3px;
+    }
+    
+    .slider__item_text_secondary {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Footer */
+    
+    .footer {
+        margin-top: 150px;
+        background-color: #FF9635;
+    }
+    
+    .footer-menu {
+        display: flex;
+        padding: 50px 0px 50px 63px ;
+        max-width: 856px;
+        
+    }
+    
+    .footer-menu_title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: #000000;
+        padding-bottom: 34px;
+    }
+    
+    .footer-menu a{
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 35px;
+        color: #000000;
+    }
+    
+    .footer-menu_sections{
+        margin-right: 141px;
+    }
+    
+    .footer-menu_about {
+        max-width: 350px;
+        margin-right: 100px;
+    }
+    
+    .footer-menu_contacts {
+        max-width: 150px;
+    }
+    .footer-bottom {
+        display: flex;
+        background-color: #F08726;
+        padding: 63px 38px;
+    
+    }
+    
+    .footer-bottom__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        margin-right: 39px;
+    }
+    
+    .footer-bottom_links {
+        display: flex;
+        align-items: center;
+        margin-right:246px ;
+    }
+    
+    .footer-bottom_links img {
+        padding-right: 15px;
+    }
+    
+    .footer-bottom_copy {
+        display: flex;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(0, 0, 0, 0.4);
+        align-items: center;
+    }
+}
+
+
+/* .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F08726;
+    max-height: 51px;
+}
+
+.header__logo {
+    max-width:36px ;
+    padding: 10px 0px 10px 63px ;
+}
+
+.header__menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.header__menu li {
+    padding: 8px 46px 8px 0px;
+    align-items: center;
+}
+
+.header__menu li:last-child {
+    padding-right: 63px;
+}
+
+.header__menu a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: #000000;
+} */
 

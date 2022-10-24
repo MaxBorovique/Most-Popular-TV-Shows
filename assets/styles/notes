@@ -1,0 +1,62 @@
+.container__images_orange_right {
+    display: flex;
+    background-color: #FF9635;
+    width: 143px;
+    height: 361px;
+    position: relative;
+    margin-right: 40px;
+    margin-left: 199px;
+}
+
+.container__images_poster_right {
+    background-image: url(/assets/images/Hounting_of_HH.png);
+    background-size: cover;
+    width: 258px;
+    height: 381px;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    margin: 60px 19px 0px 65px;
+    
+}
+
+.container__text_right {
+    max-width: 322px;
+    margin: 60px 0px 0px 40px;
+}
+
+.container__text_right_ordinal-number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 21px;
+    color: #FF9635;
+    padding-bottom: 10px;
+}
+
+.container__text_right_headline_black {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+.container__text_right_production_black {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 20px;
+}
+
+.container__text_right_description_black {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 30px;
+}

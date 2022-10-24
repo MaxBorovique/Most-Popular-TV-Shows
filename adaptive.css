@@ -1,0 +1,14 @@
+/* 840px */
+
+@media (max-width: 1439px) {
+    .main-screen__decoration {
+        overflow: hidden;
+
+
+
+    }
+    .container_horizontal__images {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,5 @@
+@media (max-width: 840px) {
+    .main-screen__decoration {
+        flex-wrap: wrap;
+    }
+}
