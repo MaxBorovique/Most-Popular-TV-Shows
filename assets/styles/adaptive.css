@@ -723,25 +723,29 @@
     /* Footer */
     
     .footer {
-        margin-top: 100px;
+        margin-top: 60px;
         background-color: #FF9635;
     }
     
-    .footer-menu {
-        display: flex;
-        padding: 40px ;
-        max-width: 661px;
+    .footer-menu_title {
+        display: none;
+
         
     }
+
     
     .footer-menu_title {
-        font-weight: 600;
+        font-style: normal;
+        font-weight: 400;
         font-size: 16px;
-        line-height: 21px;
+        line-height: 150%;
         color: #000000;
-        padding-bottom: 34px;
+        padding-bottom: 10px;
     }
     
+    .footer-menu_about {
+        display: none;
+    }
     .footer-menu a{
         text-decoration: none;
         font-style: normal;
@@ -750,51 +754,53 @@
         line-height: 35px;
         color: #000000;
     }
-    
-    .footer-menu_sections{
-        margin-right: 50px;
-    }
-    
-    .footer-menu_about {
-        max-width: 260px;
-        margin-right: 82px;
-    }
-    
     .footer-menu_contacts {
-        max-width: 150px;
+        display: none;
     }
+    
+
     .footer-bottom {
         display: flex;
-        background-color: #F08726;
-        padding: 63px 38px;  
+        background-color: #F08726; 
+        height: 102px;
+        padding: 0px;
     
     }
     
     .footer-bottom__title {
+        font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
         color: #000000;
-        margin-right: 39px;
+        margin: 0 auto;
+        width: 71px;
+        position: relative;
+        padding: 20px;
     }
     
     .footer-bottom_links {
         display: flex;
         align-items: center;
-        margin-right:246px ;
     }
     
     .footer-bottom_links img {
-        padding-right: 15px;
+
     }
     
     .footer-bottom_copy {
         display: flex;
+        font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 21px;
+        line-height: 150%;
         color: rgba(0, 0, 0, 0.4);
-        align-items: center;
+        align-items: flex-end;
+        width: 280px;
+        position: absolute;
+        margin-top: 64px;
+        margin-bottom: 20px;
+        padding: 20px;
     }
 
     .container_vertical__images_poster_mirror {
